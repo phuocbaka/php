@@ -1,0 +1,372 @@
+.all {
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    margin-top: 10%;
+    max-width: 1500px;
+}
+
+.column1 {
+    margin-right: 30px;
+    width: 70%;
+}
+
+ul {
+    padding-left: 0px;
+}
+
+.about-video video {
+    border: 3px solid black;
+    /*  -webkit-filter: grayscale(100%);  Safari 6.0 - 9.0 
+  filter: grayscale(100%);*/
+}
+
+.about-video video:hover {
+    transition: all 300ms cubic-bezier(0.645, 0.045, 0.355, 1.000);
+}
+
+.column2 {
+    width: 30%;
+}
+
+.column2-01 {
+    /*  display: flex;
+  padding-bottom: 5px;
+  margin-top: 5px;*/
+}
+
+.column2-01 a {
+    display: flex;
+    width: 100%;
+    text-decoration: none;
+}
+
+.column2-01 h3 {
+    margin: 0;
+    color: #000;
+    font-size: 14px;
+}
+
+.title-content {
+    width: 50%;
+}
+
+.title-content p {
+    font-weight: normal;
+    color: #525252;
+    font-size: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+}
+
+.column1.about-video p {
+    font-weight: normal;
+    font-size: 12px;
+}
+
+.thumnail img {
+    border-radius: 5px;
+    width: 100%;
+}
+
+.all-column {
+    overflow-y: scroll;
+    height: 700px;
+}
+
+.all-column::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: #F5F5F5;
+    display: none;
+}
+
+.all-column::-webkit-scrollbar {
+    width: 10px;
+    background-color: #F5F5F5;
+    display: none;
+}
+
+.all-column::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #D62929;
+    display: none;
+}
+
+.video-tl {
+    display: flex;
+    margin-top: 20px;
+    border-bottom: 1px solid #c7c7c759;
+    padding-bottom: 18px;
+}
+
+.video-title {
+    flex-grow: 2;
+}
+
+.video-icon {
+    display: flex;
+}
+
+.video-title h1 {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    font-size: 16px;
+}
+
+.video-like img,
+.video-unlike img {
+    vertical-align: super;
+    width: 30%;
+}
+
+.video-share img {
+    vertical-align: super;
+    width: 21%;
+}
+
+.thumnail {
+    margin-right: 10px;
+    width: 50%
+}
+
+.up-next {
+    margin-bottom: 30px;
+}
+
+.up-next span {
+    margin-top: 0px;
+}
+
+.abc {
+    border-bottom: 1px solid #eaeaea;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+}
+
+.col-right {
+    float: right;
+    display: flex;
+    margin-top: -18px;
+}
+
+.text-upload {
+    margin-right: 10px;
+    position: relative;
+    top: -11px;
+}
+
+.flatRoundedCheckbox {
+    width: 40px;
+    height: 16px;
+    position: relative;
+}
+
+.flatRoundedCheckbox div {
+    width: 100%;
+    height: 100%;
+    background: #d3d3d3;
+    border-radius: 50px;
+    position: relative;
+    top: -30px;
+}
+
+.flatRoundedCheckbox label {
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    transition: all .5s ease;
+    cursor: pointer;
+    position: absolute;
+    top: -5px;
+    z-index: 1;
+    left: 1px;
+    background: #505050;
+}
+
+.flatRoundedCheckbox input[type=checkbox]:checked ~ div {
+    background: #61ceff;
+}
+
+.flatRoundedCheckbox input[type=checkbox]:checked ~ label {
+    left: 20px;
+}
+
+input[type=checkbox] {
+    visibility: hidden;
+}
+
+@media screen and (max-width: 1024px) {
+    .all {
+        margin: 0 auto;
+        width: 100%;
+        display: flex;
+        margin-top: 10%;
+        max-width: 1500px;
+    }
+    .column2-01 a {
+        display: block;
+        width: 100%;
+        text-decoration: none;
+    }
+    .title-content {
+        width: 100%;
+    }
+    .thumnail {
+        margin-right: 10px;
+        width: 100%;
+    }
+    .all-column {
+        overflow-y: scroll;
+        height: 1000px;
+        display: block;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .all {
+        margin: 0 auto;
+        width: 100%;
+        display: block;
+        margin-top: 12%;
+        max-width: 1500px;
+    }
+    .all-column {
+        overflow-y: scroll;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .column1 {
+        margin-right: 10px;
+        width: 100%;
+    }
+    .column2 {
+        width: 100%;
+    }
+    .all-column li {
+        width: 50%;
+        padding: 0 10px;
+        list-style-type: none;
+    }
+    .imess {
+        display: flex;
+        padding-left: 17px;
+    }
+    .up-next {
+        margin-bottom: 0px;
+        margin-top: 70px;
+    }
+    .abc {
+        border-bottom: none;
+        margin-bottom: 20px;
+        padding-bottom: 15px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .categoly-video {
+        -webkit-flex: 0 50%;
+        flex: 0 50%;
+        max-width: 50%;
+    }
+    .video-new h2 {
+        margin-top: 25%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .thumnail {
+        width: 100%;
+    }
+    .all {
+        margin: 0 auto;
+        width: 100%;
+        display: block;
+        margin-top: 20%;
+        max-width: 1500px;
+    }
+    .column1 {
+        margin-right: 0px;
+        width: 100%;
+    }
+    .column2 {
+        margin-right: 0px;
+        width: 100%;
+    }
+    .column2-01 a {
+        display: block;
+        width: 100%;
+        text-decoration: none;
+    }
+    .title-content {
+        width: 100%;
+    }
+    .up-next {
+        margin-bottom: 0px;
+        margin-top: 50px;
+    }
+    .video-title h1 {
+        margin-top: 20px;
+        margin-block-end: 0;
+    }
+    .all-column {
+        display: block;
+        height: auto;
+    }
+    .all-column li {
+        width: 100%;
+        padding: 0px;
+        list-style-type: none;
+    }
+    .thumnail img {
+        border-radius: 5px;
+        width: 100%;
+    }
+}
+
+
+/*@media screen and (max-width: 414px) {
+.thumnail {
+    margin-right: 16px;
+
+}
+
+}
+
+@media screen and (max-width: 375px) {
+
+.thumnail {
+margin-right: 16px;
+}
+}*/
+
+@media screen and (max-width: 340px) {
+    .all {
+        margin: 0 auto;
+        width: 100%;
+        display: block;
+        margin-top: 40%;
+    }
+    ul img {
+        width: 100%;
+    }
+    .column2-01 {
+        display: block;
+        padding-bottom: 5px;
+        margin-top: 5px;
+    }
+    .thumnail {
+        margin-right: 0px;
+    }
+}
+
